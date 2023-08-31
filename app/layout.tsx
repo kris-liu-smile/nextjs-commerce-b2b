@@ -36,6 +36,7 @@ const inter = Inter({
 });
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
+  (window as any).B3 = { setting: { store_hash: 'imk8zz7jip' } };
   return (
     <html lang="en" className={inter.variable}>
       <body className="text-black bg-neutral-50 selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white">
