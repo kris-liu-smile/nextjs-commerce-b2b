@@ -1,6 +1,5 @@
 import Navbar from 'components/layout/navbar';
 import { Inter } from 'next/font/google';
-import Script from 'next/script';
 import { ReactNode, Suspense } from 'react';
 import './globals.css';
 
@@ -36,7 +35,6 @@ const inter = Inter({
 });
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
-  (window as any).B3 = { setting: { store_hash: 'imk8zz7jip' } };
   return (
     <html lang="en" className={inter.variable}>
       <body className="text-black bg-neutral-50 selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white">
@@ -44,8 +42,6 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
         <Suspense>
           <main>{children}</main>
         </Suspense>
-        <Script src="https://cdn.bundleb2b.net/b2b/staging/storefront/polyfills-legacy.777236c5.js"></Script>
-        <Script src="https://cdn.bundleb2b.net/b2b/staging/storefront/index-legacy.8e12e9bd.js"></Script>
       </body>
     </html>
   );
