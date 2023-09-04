@@ -38,7 +38,7 @@ const inter = Inter({
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
-      <Script type="module" data-storehash="imk8zz7jip" data-channelid="1222858" src="http://127.0.0.1:8080/headless.js"></Script>
+      <Script type="module" data-storehash="imk8zz7jip" data-channelid="1222858" src="https://cdn.bundleb2b.net/b2b/staging/storefront/headless.js"></Script>
       <body className="text-black bg-neutral-50 selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white">
         <Navbar />
         <Suspense>
